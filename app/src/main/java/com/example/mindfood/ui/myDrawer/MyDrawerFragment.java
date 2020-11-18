@@ -16,20 +16,11 @@ import com.example.mindfood.R;
 
 public class MyDrawerFragment extends Fragment {
 
-    private MyDrawerViewModel myDrawerViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        myDrawerViewModel =
-                ViewModelProviders.of(this).get(MyDrawerViewModel.class);
         View root = inflater.inflate(R.layout.fragment_my_drawer, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        myDrawerViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

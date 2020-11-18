@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/navigation_setting"
-        android:name="com.example.mybook.ui.setting.SettingFragment"
+        android:name="com.example.mindfood.ui.setting.SettingFragment"
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_setting" />
 </navigation>
