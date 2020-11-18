@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.example.mindfood.R;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
