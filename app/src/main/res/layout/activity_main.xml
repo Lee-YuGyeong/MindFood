@@ -29,6 +29,8 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/mobile_navigation"
+        android:layout_marginBottom="?attr/actionBarSize"
+
         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
