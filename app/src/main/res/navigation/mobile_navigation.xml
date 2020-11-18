@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mindfood.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_myDrawer"
+        android:name="com.example.mindfood.ui.myDrawer.MyDrawerFragment"
+        android:label="@string/title_myDrawer"
+        tools:layout="@layout/fragment_my_drawer" />
+
+    <fragment
+        android:id="@+id/navigation_globalDrawer"
+        android:name="com.example.mindfood.ui.globalDrawer.GlobalDrawerFragment"
+        android:label="@string/title_globalDrawer"
+        tools:layout="@layout/fragment_global_drawer" />
+
+    <fragment
+        android:id="@+id/navigation_recommendation"
+        android:name="com.example.mindfood.ui.recommendation.RecommendationFragment"
+        android:label="@string/title_recommendation"
+        tools:layout="@layout/fragment_recommendation" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.mybook.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

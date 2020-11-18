@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    <string name="title_home">홈</string>
+    <string name="title_myDrawer">내 서랍</string>
+    <string name="title_globalDrawer">모두의 서랍</string>
+    <string name="title_recommendation">추천</string>
+    <string name="title_setting">마이페이지</string>
+</resources>
