@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment;
 import com.example.mindfood.MainActivity;
 import com.example.mindfood.R;
 import com.example.mindfood.ui.myDrawer.MyDrawerFragment;
+import com.example.mindfood.ui.recommendation.RecommendationFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeFragment extends Fragment {
 
@@ -25,7 +27,7 @@ public class HomeFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new MyDrawerFragment()).addToBackStack(null).commit();
+                ((BottomNavigationView)getActivity().findViewById(R.id.nav_view)).setSelectedItemId(R.id.navigation_myDrawer);
             }
         });
 
@@ -33,7 +35,7 @@ public class HomeFragment extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new MyDrawerFragment()).addToBackStack(null).commit();
+                ((BottomNavigationView)getActivity().findViewById(R.id.nav_view)).setSelectedItemId(R.id.navigation_myDrawer);
             }
         });
 
@@ -41,7 +43,7 @@ public class HomeFragment extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new MyDrawerFragment()).addToBackStack(null).commit();
+                ((BottomNavigationView)getActivity().findViewById(R.id.nav_view)).setSelectedItemId(R.id.navigation_myDrawer);
             }
         });
 
