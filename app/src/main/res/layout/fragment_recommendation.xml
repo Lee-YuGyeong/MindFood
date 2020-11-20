@@ -5,16 +5,31 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#D9CDBC"
-        android:gravity="center"
-        android:text="추천"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#D9CDBC"
+            android:gravity="center"
+            android:text="추천"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/bullet_list"
+            android:stateListAnimator="@null" />
+
+
+    </FrameLayout>
 
 
     <com.google.android.material.tabs.TabLayout
