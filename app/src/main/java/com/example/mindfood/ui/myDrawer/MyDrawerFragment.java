@@ -35,14 +35,16 @@ public class MyDrawerFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_my_drawer, container, false);
 
         rcv = (RecyclerView)root.findViewById(R.id.recyclerView);
-        llm = new LinearLayoutManager(getContext());
-        //glm = new GridLayoutManager(getContext())
-        rcv.setHasFixedSize(true);
-        rcv.setLayoutManager(llm);
-
-        InitializeData();
+//        llm = new LinearLayoutManager(getContext());
+//        //glm = new GridLayoutManager(getContext())
+//        rcv.setHasFixedSize(true);
+//        //rcv.setLayoutManager(llm);
+//
+//        Data.add(new listview_item("백설공주",3.0));
+        //Data.add(new listview_item("백설공주",3));
+        //Data.add(new listview_item("백설공주",3));
         adapter = new RecyclerAdapter(this,Data);
-        llm = new LinearLayoutManager(getActivity());
+//        llm = new LinearLayoutManager(getActivity());
 
         rcv.setAdapter(adapter);
 
@@ -67,12 +69,5 @@ public class MyDrawerFragment extends Fragment {
         return root;
     }
 
-    public void InitializeData(){
-        Data = new ArrayList<listview_item>();
-
-        Data.add(new listview_item("어린왕자",1));
-        Data.add(new listview_item("백설공주",6));
-        Data.add(new listview_item("피노키오",3));
-    }
 
 }
