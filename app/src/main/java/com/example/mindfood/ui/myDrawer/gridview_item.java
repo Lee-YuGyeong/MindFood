@@ -1,27 +1,41 @@
 package com.example.mindfood.ui.myDrawer;
 
+import android.widget.RatingBar;
+
 public class gridview_item {
     private String name;
-    //private Image image;
+    private double rating;
+    private int imageNumber;
 
-    public gridview_item(String name){
+
+    public gridview_item(String name,int imageNumber,float rating){
         this.name = name;
-        // this.image = image;
+        this.rating = rating;
+        this.imageNumber = imageNumber;
     }
 
 
 
 
     public void setName(String name){this.name = name;}
-
-    //    public void setImage(Image image) {
-//        this.image = image;
-//    }
     public String getName(){
         return name;
     }
-//    public Image getImage(){
-//        return image;
-//    }
+
+    public double getRating() {
+        return rating;
+    }
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public void setImageNumber(int imageNumber) {
+        this.imageNumber = imageNumber;
+    }
+    public int getImageNumber() {
+        return imageNumber;
+    }
+
+
 }
 
