@@ -5,13 +5,13 @@ import android.widget.RatingBar;
 public class gridview_item {
     private String name;
     private double rating;
-    private int imageNumber;
+   // private int imageNumber;
 
 
     public gridview_item(String name,int imageNumber,float rating){
         this.name = name;
         this.rating = rating;
-        this.imageNumber = imageNumber;
+        //this.imageNumber = imageNumber;
     }
 
 
@@ -29,12 +29,12 @@ public class gridview_item {
         this.rating = rating;
     }
 
-    public void setImageNumber(int imageNumber) {
-        this.imageNumber = imageNumber;
-    }
-    public int getImageNumber() {
-        return imageNumber;
-    }
+//    public void setImageNumber(int imageNumber) {
+//        this.imageNumber = imageNumber;
+//    }
+//    public int getImageNumber() {
+//        return imageNumber;
+//    }
 
 
 }

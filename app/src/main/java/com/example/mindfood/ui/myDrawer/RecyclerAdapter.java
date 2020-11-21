@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mindfood.R;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.jar.Attributes;
 
